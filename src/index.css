@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Keluar kiri */
+.slide-left {
+  animation: slideLeft 0.3s ease forwards;
+}
+@keyframes slideLeft {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(-40px); }
+}
+
+/* Masuk dari kanan */
+.slide-left-in {
+  animation: slideLeftIn 0.3s ease forwards;
+}
+@keyframes slideLeftIn {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Keluar kanan */
+.slide-right {
+  animation: slideRight 0.3s ease forwards;
+}
+@keyframes slideRight {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(40px); }
+}
+
+/* Masuk dari kiri */
+.slide-right-in {
+  animation: slideRightIn 0.3s ease forwards;
+}
+@keyframes slideRightIn {
+  from { opacity: 0; transform: translateX(-40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
