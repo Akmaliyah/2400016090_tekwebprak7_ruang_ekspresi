@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "../assets/logo.png";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -6,18 +7,15 @@ export default function Header() {
   return (
     <nav className="w-full flex justify-between items-center px-4 py-3 shadow-lg
       shadow-gray-300 bg-white fixed top-0 z-50">
-      
 
-      {/* LOGO */}
       <div className="flex items-center gap-3">
-        <img src="src/assets/logo.png" alt="logo" className="h-10" />
+        <img src={logo} alt="logo" className="h-10" />
         <div className="leading-tight text-blue-600">
           <h1 className="text-xl font-semibold">ruang</h1>
           <h1 className="text-xl font-semibold">ekspresi</h1>
         </div>
       </div>
 
-      {/* MENU DESKTOP */}
       <div className="hidden md:flex gap-6 text-black">
         <a href="#Home" className="hover:text-blue-600 cursor-pointer">Home</a>
         <a href="#About" className="hover:text-blue-600 cursor-pointer">About</a>
@@ -27,14 +25,12 @@ export default function Header() {
         <a href="#Contact"className="hover:text-blue-600 cursor-pointer">Contact</a>
       </div>
 
-      {/* BUTTON MOBILE */}
       <button
         className="md:hidden text-3xl p-2 text-gray-800"
         onClick={() => setOpen(!open)}
       > ☰
       </button>
 
-      {/* MOBILE MENU */}
       <div
         className={`absolute left-0 top-full w-full bg-white shadow-md md:hidden transition-all 
           duration-300 overflow-hidden ${
