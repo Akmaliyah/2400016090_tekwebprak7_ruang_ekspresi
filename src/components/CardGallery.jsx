@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CardGallery() {
     return (
-        <section id="About" class="py-10 px-30">
+        <section id="About" class="py-10 px-15 md:px-30">
             <div class="w-full max-w-7xl mx-auto">
                 <h2 class="text-3xl font-bold text-center mb-2">
                     Empat Pilar <span class="text-blue-600">Ruang Ekspresi</span>
