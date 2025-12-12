@@ -134,8 +134,8 @@ export default function Showcase() {
         </button>
 
         <div className="md:hidden flex justify-between items-center w-full px-6 mt-3">
-          <img onClick={prevSlide} src="src/assets/icons_play.svg" className="w-10 h-10" />
-          <img onClick={nextSlide} src="src/assets/icons_play2.svg" className="w-10 h-10" />
+          <img onClick={prevSlide} src={iconsplay} className="w-10 h-10" />
+          <img onClick={nextSlide} src={iconsplay2} className="w-10 h-10" />
         </div>
 
       </div>
