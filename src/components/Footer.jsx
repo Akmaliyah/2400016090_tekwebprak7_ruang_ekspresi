@@ -1,4 +1,8 @@
 import React from "react";
+import logofooter from"../assets/logo_footer.png";
+import iconlocation from"../assets/icon_location.svg";
+import iconemail from"../assets/icon_email.svg";
+import iconphone from"../assets/icon_phone.svg";
 
 export default function Footer() {
   return (
@@ -7,7 +11,7 @@ export default function Footer() {
 
         <div className="flex-1 text-white font-thin">
           <div className="flex items-center gap-2 mb-2">
-            <img src="src/assets/logo_footer.png" alt="logo_footer" className=" h-10 " />
+            <img src={logofooter} alt="logo_footer" className=" h-10 " />
             <div className="leading-tight">
               <h1 className="text-xl font-semibold">ruang</h1>
               <h1 className="text-xl font-semibold">ekspresi</h1>
@@ -20,7 +24,7 @@ export default function Footer() {
           </p>
 
           <div className="flex  mb-2 w-3/5">
-            <img src="src/assets/icon_location.svg" alt="icon_location" className="w-10" />
+            <img src={iconlocation} alt="icon_location" className="w-10" />
             <p className="text-sm leading-tight">
               Jl. Ringroad Selatan, Kragilan, Tamanan, Kec. Banguntapan, 
               Bantul, Daerah Istimewa Yogyakarta 55191
@@ -28,12 +32,12 @@ export default function Footer() {
           </div>
 
           <div className="flex gap-2 mb-2 px-3">
-            <img src="src/assets/icon_email.svg" alt="icon_email" className="w-4 mt-1" />
+            <img src={iconemail} alt="icon_email" className="w-4 mt-1" />
             <p className="text-sm leading-tight">ruang_ekspresi@webmail.uad.ac.id</p>
           </div>
 
           <div className="flex gap-2 mb-2 px-3">
-            <img src="src/assets/icon_phone.svg" alt="icon_phone" className="w-4 mt-1" />
+            <img src={iconphone} alt="icon_phone" className="w-4 mt-1" />
             <p className="text-sm leading-tight">(0274) 511830</p>
           </div>
         </div>

@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import frame4 from"../assets/Frame 4.png";
+import budisantos from"../assets/budisantos.png";
+import panah from"../assets/panah.svg";
+import iconsplay from"../assets/icons_play.svg";
+import iconsplay2 from"../assets/icons_play2.svg";
 
 export default function Showcase() {
   const slides = [
@@ -7,11 +12,11 @@ export default function Showcase() {
       title: "Creative Portfolio Platform",
       desc: "Platform showcase karya mahasiswa dengan sistem rating dan feedback komunitas.",
       team: [
-        { name: "Budi Santoso", role: "Frontend Developer", img: "src/assets/budisantos.png" },
-        { name: "Budi Santoso", role: "Frontend Developer", img: "src/assets/budisantos.png" },
-        { name: "Budi Santoso", role: "Frontend Developer", img: "src/assets/budisantos.png" }
+        { name: "Budi Santoso", role: "Frontend Developer", img: budisantos },
+        { name: "Budi Santoso", role: "Frontend Developer", img: budisantos },
+        { name: "Budi Santoso", role: "Frontend Developer", img: budisantos }
       ],
-      image: "src/assets/Frame 4.png",
+      image: frame4,
       demo: "#"
     },
     {
@@ -19,11 +24,11 @@ export default function Showcase() {
       title: "Creative Portfolio Platform",
       desc: "Platform showcase karya mahasiswa dengan sistem rating dan feedback komunitas.",
       team: [
-        { name: "Budi Santoso", role: "Frontend Developer", img: "src/assets/budisantos.png" },
-        { name: "Budi Santoso", role: "Frontend Developer", img: "src/assets/budisantos.png" },
-        { name: "Budi Santoso", role: "Frontend Developer", img: "src/assets/budisantos.png" }
+        { name: "Budi Santoso", role: "Frontend Developer", img: budisantos },
+        { name: "Budi Santoso", role: "Frontend Developer", img: budisantos },
+        { name: "Budi Santoso", role: "Frontend Developer", img: budisantos }
       ],
-      image: "src/assets/Frame 4.png",
+      image: frame4,
       demo: "#"
     },
     {
@@ -31,11 +36,11 @@ export default function Showcase() {
       title: "Creative Portfolio Platform",
       desc: "Dashboard pembelajaran modern dengan progress tracking otomatis.",
       team: [
-        { name: "Budi Santoso", role: "Frontend Engineer", img: "src/assets/budisantos.png" },
-        { name: "Agung Pratama", role: "Frontend Engineer", img: "src/assets/budisantos.png" },
-        { name: "Budi Santoso", role: "UI Specialist", img: "src/assets/budisantos.png" }
+        { name: "Budi Santoso", role: "Frontend Engineer", img: budisantos },
+        { name: "Agung Pratama", role: "Frontend Engineer", img: budisantos },
+        { name: "Budi Santoso", role: "UI Specialist", img: budisantos }
       ],
-      image: "src/assets/Frame 4.png",
+      image: frame4,
       demo: "#"
     }
   ];
@@ -79,7 +84,7 @@ export default function Showcase() {
         <button
           onClick={prevSlide}
           className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 p-3 z-20">
-          <img src="src/assets/icons_play.svg" className="w-10 h-10" />
+          <img src={iconsplay} className="w-10 h-10" />
         </button>
 
         <div className={`w-full max-w-xl px-4 md:px-20 ${animate}`}>
@@ -108,7 +113,7 @@ export default function Showcase() {
               className="text-white font-semibold bg-blue-600 rounded-md
                 py-2 px-4 inline-flex items-center gap-2 text-sm mx-auto md:mx-0"
             >
-              <img src="src/assets/panah.svg" className="w-3 h-3" />
+              <img src={panah} className="w-3 h-3" />
               Live Demo
             </a>
           </div>
@@ -125,7 +130,7 @@ export default function Showcase() {
           onClick={nextSlide}
           className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 p-3 z-20"
         >
-          <img src="src/assets/icons_play2.svg" className="w-10 h-10" />
+          <img src={iconsplay2} className="w-10 h-10" />
         </button>
 
         <div className="md:hidden flex justify-between items-center w-full px-6 mt-3">

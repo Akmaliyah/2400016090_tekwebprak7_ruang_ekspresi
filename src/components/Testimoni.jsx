@@ -1,4 +1,5 @@
 import React from "react";
+import fototesti from"../assets/foto_testi.png";
 
 export default function Testimonial() {
     return (
@@ -8,7 +9,7 @@ export default function Testimonial() {
                 <div className="bg-white rounded-2xl p-5 shadow-xl hover:shadow-lg transition">
                     <div className="flex items-center space-x-3 mb-3">
                         <img 
-                            src="src/assets/foto_testi.png" alt="foto_testi"
+                            src={fototesti} alt="foto_testi"
                             className="w-12 h-12 rounded-full object-cover"
                         />
                         <div>
@@ -25,7 +26,7 @@ export default function Testimonial() {
                 <div className="bg-white rounded-2xl p-5 shadow-xl hover:shadow-lg transition">
                     <div className="flex items-center space-x-3 mb-3">
                         <img 
-                            src="src/assets/foto_testi.png" alt="foto_testi"
+                            src={fototesti} alt="foto_testi"
                             className="w-12 h-12 rounded-full object-cover"
                         />
                         <div>
@@ -42,7 +43,7 @@ export default function Testimonial() {
                 <div className="bg-white rounded-2xl p-5 shadow-xl hover:shadow-lg transition">
                     <div className="flex items-center space-x-3 mb-3">
                         <img 
-                            src="src/assets/foto_testi.png" alt="foto_testi"
+                            src={fototesti} alt="foto_testi"
                             className="w-12 h-12 rounded-full object-cover"
                         />
                         <div>
@@ -59,7 +60,7 @@ export default function Testimonial() {
                  <div className="bg-white rounded-2xl p-5 shadow-xl hover:shadow-lg transition">
                     <div className="flex items-center space-x-3 mb-3">
                         <img 
-                            src="src/assets/foto_testi.png" alt="foto_testi"
+                            src={fototesti} alt="foto_testi"
                             className="w-12 h-12 rounded-full object-cover"
                         />
                         <div>
@@ -76,7 +77,7 @@ export default function Testimonial() {
                  <div className="bg-white rounded-2xl p-5 shadow-xl hover:shadow-lg transition">
                     <div className="flex items-center space-x-3 mb-3">
                         <img 
-                            src="src/assets/foto_testi.png" alt="foto_testi"
+                            src={fototesti} alt="foto_testi"
                             className="w-12 h-12 rounded-full object-cover"
                         />
                         <div>
@@ -93,7 +94,7 @@ export default function Testimonial() {
                  <div className="bg-white rounded-2xl p-5 shadow-xl hover:shadow-lg transition">
                     <div className="flex items-center space-x-3 mb-3">
                         <img 
-                            src="src/assets/foto_testi.png" alt="foto_testi"
+                            src={fototesti} alt="foto_testi"
                             className="w-12 h-12 rounded-full object-cover"
                         />
                         <div>
